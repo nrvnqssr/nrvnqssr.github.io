@@ -1,102 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Книжный магазин</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мебельный магазин</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <header class="page-banner" id="top">
+        <h1>Мебельный магазин</h1>
+    </header>
 
-    <ul class="menu">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Книги</a></li>
-        <li><a href="#">Новинки</a></li>
-        <li><a href="#">Скидки</a></li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-
-    <div class="catalog">
-
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fir.ozone.ru%2Fs3%2Fmultimedia-y%2Fc1000%2F6638618410.jpg&f=1&nofb=1&ipt=dc358010053dc84e00ad404be4961d73154248fd26df170276c9d67f078d3af9&ipo=images" alt="Стивен Кинг — «Сияние»"></a>
-                <a class="card-title" href="#">Стивен Кинг — «Сияние»</a>
-                <div class="card-genre">Психологический хоррор, мистика</div>
-                <div class="card-price">
-                    <span class="price-new">999 ₽</span>
-                    <span class="price-old">1299 ₽</span>
-                </div>
-                <div class="card-desc">Писатель Джек Торранс с семьей становится зимним сторожем в пустующем отеле «Оверлук», где древнее зло начинает сводить его с ума, а его маленький сын обладает даром «сияния», позволяющим видеть ужасы отеля.</div>
+    <nav class="horizontal-menu" aria-label="Основная навигация">
+        <div class="horizontal-menu-item">
+            <a href="#task-1">Главная</a>
+            <div class="horizontal-submenu">
+                <a href="#task-1">Главная страница</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#about">О нас</a>
             </div>
         </div>
-
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcv5.litres.ru%2Fpub%2Fc%2Fcover%2F48584658.jpg&f=1&nofb=1&ipt=51f81d7f2ada5002fbe48a6c7a7f425e6b914fa4ad2c4bb79ca639a5dd0154fb&ipo=images" alt="Дин Кунц — «Ангелы-хранители»"></a>
-                <a class="card-title" href="#">Дин Кунц — «Ангелы-хранители»</a>
-                <div class="card-genre">Триллер, научная фантастика с элементами ужаса</div>
-                <div class="card-price">
-                    <span class="price-new">799 ₽</span>
-                </div>
-                <div class="card-desc">Бывший спецназовец Трэвис Корнелл встречает в лесу золотистого ретривера с необычайным интеллектом, который сбежал из секретной лаборатории, где создали не только умную собаку, но и чудовищного убийцу.</div>
+        <a href="#services">Отделы продаж</a>
+        <div class="horizontal-menu-item">
+            <a href="#">Поставщики</a>
+            <div class="horizontal-submenu">
+                <a href="#">ООО "Хороший дизайн"</a>
+                <a href="#">ООО "Красивая мебель"</a>
+                <a href="#">ООО "Дивные диваны"</a>
             </div>
         </div>
+        <a href="#services">Наши услуги</a>
+        <a href="#about">О нас</a>
+    </nav>
 
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiles.books.ru%2Fpic%2F5620001-5621000%2F5620503%2F192569358c.jpg&f=1&nofb=1&ipt=342f8af08f2aef91c2ac88043ef4202ec104707c95fd60fbc4c1bcde69cae45a&ipo=images"
-                        alt="Виктор Пелевин — «A Sinistra»"></a>
-                <a class="card-title" href="#">Виктор Пелевин — «A Sinistra»</a>
-                <div class="card-genre">Интеллектуальная проза, мистика/философия с элементами триллера</div>
-                <div class="card-price">
-                    <span class="price-new">899 ₽</span>
-                    <span class="price-old">1199 ₽</span>
+    <main>
+        <section class="task" id="task-1" aria-labelledby="title-1">
+
+            <div class="columns">
+                <aside class="left-column panel" aria-labelledby="news-title">
+                    <h3 id="news-title">О нас</h3>
+                    <p>
+                        Мы — мебельный магазин, который помогает сделать дом удобнее и красивее. Работаем с частными покупателями и компаниями: подбираем мебель под размеры помещения, организуем доставку и сборку. Наша цель — чтобы покупка мебели была простой, а результат радовал каждый день.
+                    </p>
+                </aside>
+
+                <aside class="right-column" aria-label="Контакты и услуги">
+                    <section class="panel" id="contacts">
+                        <h3>Контакты</h3>
+                        <p>
+                            <strong>Адрес:</strong> г. Уфа, ул. Карла Маркса, 33<br />
+                            <strong>Телефон:</strong> 8-999-999-99-99
+                        </p>
+                    </section>
+                    <section class="panel" id="services">
+                        <h3>Услуги</h3>
+                        <ul class="services-list">
+                            <li>Разработка дизайна</li>
+                            <li>Сборка мебели</li>
+                            <li>Доставка</li>
+                        </ul>
+                    </section>
+                </aside>
+
+                <div class="center-column panel">
+                    <h3>Наша продукция</h3>
+                    <div class="cards">
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="Telegram">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fogogo.ru%2Fimages%2Fproducts%2F262954%2Fa91c8b064b7bf1291633d7824082799a.webp&f=1&nofb=1&ipt=bf7a3d57fc7e4b5da0795774f96ea22a0022add0c2412f50f984e68b6fe34fa9&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Стул</span>
+                        </a>
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="VK">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmondointerior.ru%2Fwp-content%2Fuploads%2F2024%2F12%2Fdiamond-dining-table-01-zoom-boca-do-lobo.png&f=1&nofb=1&ipt=8126143137286c03090f5318a54c564d5a8fe9f56472dbc4362d480484ee1fbf&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Стол</span>
+                        </a>
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmondointerior.ru%2Fwp-content%2Fuploads%2F2025%2F01%2Ftumbochka-lascasas-roise-in-mondo-interior-2.jpg&f=1&nofb=1&ipt=49e7bba50be4eb0ae6ab404de3d08fb81eb1c6c8a6191bfd05f938e33482ad75&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Тумба</span>
+                        </a>
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fparametricmebel.ru%2Fwp-content%2Fuploads%2F2023%2F11%2Flounge-main.webp&f=1&nofb=1&ipt=3b0d851db0a48e971ccd5646f21012a3bd48116a2a48dcc4e0f3dc27d46c385a&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Кресло</span>
+                        </a>
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmondointerior.ru%2Fwp-content%2Fuploads%2F2024%2F12%2Fdenning-sofa-aster-06-hr_29-06-20o64rw9_g.jpg&f=1&nofb=1&ipt=006b9eecbe4eaf2be1902c9baa175cc308b344979950b253b41980e306bd4b17&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Диван</span>
+                        </a>
+                        <a class="card" href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="TikTok">
+                            <img class="card-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.wwydGA9WP5-eggD9Ll8f5wHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=680b88d4ac7c28bad7cbaac89a0d2be76ccb635bbb72186d2ccbc64690cb4e64&ipo=images" alt="" />
+                            <span class="layer" aria-hidden="true">Дверь</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="card-desc">Одна из новых книг Пелевина, попавшая в короткий список «Премии Читателя — 2026»: реальность здесь открывается с неожиданной стороны, а сюжет строится вокруг привычных для автора тем — иллюзорности мира и языка, которым мы пытаемся его описать.</div>
             </div>
-        </div>
+        </section>
 
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.ozone.ru%2Fs3%2Fmultimedia-t%2F6008637185.jpg&f=1&nofb=1&ipt=053c04449a01013d5e48f11f65f3b63258dfb73c494146f9d8633cf7ec3aad3d&ipo=images" alt="Фёдор Достоевский — «Преступление и наказание»"></a>
-                <a class="card-title" href="#">Фёдор Достоевский — «Преступление и наказание»</a>
-                <div class="card-genre">Психологический роман, криминальная драма</div>
-                <div class="card-price">
-                    <span class="price-new">699 ₽</span>
-                </div>
-                <div class="card-desc">Бывший студент Раскольников убивает старуху-процентщицу, чтобы проверить свою теорию о «право имеющих», но после преступления его начинает разъедать совесть, а следователь Порфирий Петрович ведёт с ним тонкую психологическую игру. Это не мистика, но по напряжению не уступает триллеру.</div>
-            </div>
-        </div>
+        <section class="task menu-task" id="task-2" aria-labelledby="title-2">
+            <h2 id="title-2">2. Вертикальное выпадающее меню</h2>
 
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fazon.market%2Fimage%2Fcatalog%2Fsupplier29%2F698%2Ff40af38c3c2bb9c8da4b08a04722040c.jpg&f=1&nofb=1&ipt=98926fc518580dfe132a49e7a5d1f0892fb3e6ae4b698c268ddc46fbbd333c4f&ipo=images" alt="Михаил Булгаков — «Мастер и Маргарита»"></a>
-                <a class="card-title" href="#">Михаил Булгаков — «Мастер и Маргарита»</a>
-                <div class="card-genre">Мистический реализм, сатира, философский роман</div>
-                <div class="card-price">
-                    <span class="price-new">1099 ₽</span>
-                    <span class="price-old">1399 ₽</span>
-                </div>
-                <div class="card-desc">В Москву 1930-х приезжает загадочный Воланд со свитой, и город погружается в череду странных и опасных событий, а параллельно разворачивается история Мастера и Маргариты и роман о Понтии Пилате. Формально мистика здесь есть, но это скорее литературная игра и сатира, чем хоррор.</div>
-            </div>
-        </div>
+            <nav aria-label="Вертикальное меню">
+                <ul class="vertical-menu flyout-menu">
+                    <li>
+                        <a href="#top">Главная <span aria-hidden="true">›</span></a>
+                        <ul class="submenu">
+                            <li><a href="#task-1">Главная страница</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#about">О нас</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Отделы продаж</a></li>
+                    <li>
+                        <a href="#">Поставщики <span aria-hidden="true">›</span></a>
+                        <ul class="submenu">
+                            <li><a href="#">ООО «Дизайн»</a></li>
+                            <li><a href="#">ООО «Арт»</a></li>
+                            <li><a href="#">ООО «Фотостиль»</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </nav>
+        </section>
 
-        <div class="card">
-            <div class="card-inner">
-                <a href="#"><img class="card-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fir.ozone.ru%2Fs3%2Fmultimedia-d%2Fc1000%2F6713199121.jpg&f=1&nofb=1&ipt=ecfa8d3eb7ded0a42ec9122435d20d556dfa8ffdc4ca7639253931757557dec3&ipo=images" alt="Кир Булычёв — «Посёлок»"></a>
-                <a class="card-title" href="#">Кир Булычёв — «Посёлок»</a>
-                <div class="card-genre">Научная фантастика, выживание</div>
-                <div class="card-price">
-                    <span class="price-new">799 ₽</span>
-                </div>
-                <div class="card-desc">Звездолёт землян потерпел крушение на необитаемой планете, выжившие построили посёлок и одичали за поколения, а главный герой пытается понять, что находится за пределами леса, который они считают концом мира . Это не «детский» Булычёв, а жёсткая и атмосферная вещь.</div>
-            </div>
-        </div>
+        <section class="task menu-task" id="task-star" aria-labelledby="title-star">
+            <h2 id="title-star">2*. Двойная вложенность</h2>
 
-    </div>
+            <nav aria-label="Меню с двойной вложенностью">
+                <ul class="vertical-menu flyout-menu nested-menu">
+                    <li><a href="#top">Главная</a></li>
+                    <li><a href="#services">Отделы продаж</a></li>
+                    <li>
+                        <a href="#">Поставщики <span aria-hidden="true">›</span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Дизайн <span aria-hidden="true">›</span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">ООО "Хороший дизайн"</a></li>
+                                    <li><a href="#">ООО "Красивая мебель"</a></li>
+                                    <li><a href="#">ООО "Дивные диваны"</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Материалы <span aria-hidden="true">›</span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">ООО "Качественное дерево"</a></li>
+                                    <li><a href="#">ООО "Кожа и гвозди"</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </nav>
+        </section>
 
+        <section class="task menu-task" id="task-3" aria-labelledby="title-3">
+            <h2 id="title-3">3. Меню, раскрывающееся вниз</h2>
+
+            <nav aria-label="Раскрывающееся вертикальное меню">
+                <ul class="vertical-menu accordion-menu">
+                    <li>
+                        <a href="#top">Главная <span aria-hidden="true">⌄</span></a>
+                        <ul class="submenu">
+                            <li><a href="#task-1">Главная страница</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#about">О нас</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Отделы продаж</a></li>
+                    <li>
+                        <a href="#">Поставщики <span aria-hidden="true">⌄</span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Дизайн</a>
+                                <ul class="submenu">
+                                    <li><a href="#">ООО "Хороший дизайн"</a></li>
+                                    <li><a href="#">ООО "Красивая мебель"</a></li>
+                                    <li><a href="#">ООО "Дивные диваны"</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <a href="#top">Наверх ↑</a>
+    </footer>
 </body>
 
 </html>
