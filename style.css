@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    padding: 14px 22px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background .25s, color .25s;
+}
+
+.menu a:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+
+
+.catalog {
+    padding: 20px;
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 25%;
+    min-width: 240px;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.card-inner {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .06);
+    transition: box-shadow .2s;
+}
+
+.card-inner:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.card-photo {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity .25s;
+}
+
+.card-photo:hover {
+    opacity: 0.7;
+}
+
+.card-title {
+    display: block;
+    margin: 10px 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color .2s;
+}
+
+.card-title:hover {
+    color: #e74c3c;
+}
+
+.card-genre {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+
+/* Цены */
+.card-price {
+    margin-bottom: 8px;
+}
+
+.price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 8px;
+}
+
+.price-old {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+}
